@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="navigation, bars, html, css">   
+    <meta name="Author" content="Smith codes">
+    <meta name="Description" content="fundamental tags assignment 1">
+    <title>working with navigation bars </title>
+    <style>
+        nav {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #222;
+                height: 50px;
+                padding: 0 20px;
+                border-radius: 10px;
+            }
+        
+         nav a {
+            position: relative;
+            display: inline-block;
+            font: size 1em;
+            font-weight: 500;
+            color: white;
+            text-decoration: none;
+            padding: 0 23px;
+            z-index: 1;
+        }
+        .link {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .link span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 95px;
+            height: 100%;
+            background: linear-gradient(45deg, #194b4f, #33fffc);
+            border-radius: 10px;
+            transition: 0.5s;
+            z-index: 0;
+        }
+        .link a:nth-child(1):hover ~ span {left: 0px;
+        }
+         .link a:nth-child(2):hover ~ span {left: 90px
+            }
+            .link a:nth-child(3):hover ~ span {left: 180px
+            }
+            .link a:nth-child(4):hover ~ span {left: 275px
+            }
+            .link a:nth-child(5):hover ~ span {left: 380px
+            }
+            
+            .logo {
+                display: flex;
+                align-items: center;
+            }
+            .logo img {
+                height: 40px;
+                width: auto;
+                border-radius: 5px;
+            }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+
+            <div class="logo">
+                <img src="mine-0.webp" alt="BN" height="40">
+             </div>
+
+        <div class="link">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="product.html">Product</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <span></span>
+        </div>
+        </nav>
+
+    </header>
+
+
+</body>
+</html>
